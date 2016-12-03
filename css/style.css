@@ -8,6 +8,8 @@ body {
 	overflow-x: hidden;
 	font-size: 2em;
 	font-family: 'Reem Kufi', sans-serif;
+	background-color: #121212;
+	color: white;
 }
 
 h1 {
@@ -27,12 +29,16 @@ hr {
 	width: 30%;
 }
 
-.wrapper {
-	margin: 10px;
-	padding: 10px;
+input[type=submit] {
 	
 }
 
+.wrapper {
+	margin: 10px;
+	padding: 10px;
+
+}
+
 #title {
-	padding-bottom: 50px;
+	padding: 50px;
 }

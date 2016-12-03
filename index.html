@@ -14,6 +14,9 @@
 <!-- Bootstrap Base CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- Main Page CSS -->
     <link type="text/css" href="css/style.css" rel="stylesheet">
 
@@ -26,16 +29,17 @@
 	<div class="container-fluid wrapper">
 		<div class="row">
 			<div class="col-xs-12" id="title">
-				<h1 class="text-center">Re-Focus</h1>
+				<h1 class="text-center">Re-Focus.</h1>
 			</div>
 		</div>
 		<div class="col-xs-12 text-center" id="objective-section">
-			<h2>Do you have a clear objective?</h2>
+			<h2>Give yourself a clear objective.</h2>
 			<hr/>
 			<form>
-				<input type="text" name="objective">
+				<input type="text" name="objective" />
+				<button type="submit" class="btn btn-success" onclick="">Next</button>
 			</form>
-			<p>Choosing one clear objective allows you to have a clear end-point.</p>
+			<p>Choosing a clear objective allows you to have a clear end-point in mind.</p>
 			<!-- Insert JS Input Element for User Input-->
 		</div>
 		<div class="col-xs-12 text-center" id="next-step-section">
@@ -43,6 +47,7 @@
 			<hr/>
 			<form>
 				<input type="text" name="next-step">
+				<button type="submit" class="btn btn-success" onclick="">Next</button>
 			</form>
 			<p>Small steps allow the task to be manageable. If the objective is split into small steps, progress can be split into visible "checkpoints".</p>
 		</div>
@@ -51,6 +56,7 @@
 			<hr/>
 			<form>
 				<input type="text" name="current-point">
+				<button type="submit" class="btn btn-success" onclick="">Next</button>
 			</form>
 			<p>Losing focus happens when the current focal point is lost. Knowing where you are enables you to stay on track and mark your progress.</p>
 		</div>
@@ -63,6 +69,7 @@
 		  		<option value="long">Every 45 Minutes</option>
 		  		<option value="super-long">Every 60 Minutes</option>
 			</select>
+			<button type="submit" class="btn btn-success">Re-Focus!</button>
 		</div>
 	</div>
 

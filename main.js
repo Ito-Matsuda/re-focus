@@ -29,7 +29,6 @@ function start(){
 
 }
 
-
 $( document ).ready(function() {
 	$("#next-step-section").remove();
 	$("#current-point-section").remove();
