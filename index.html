@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body onload="hideContent()">
 	<div class="container-fluid wrapper">
 		<div class="row">
 			<div class="col-xs-12">
@@ -31,18 +31,47 @@
 		</div>
 		<div class="col-xs-12 text-center">
 			<h3>Do you have a clear objective?</h4>
+			<hr/>
+			<form>
+				<input type="text" name="objective">
+			</form>
 			<p>Choosing one clear objective allows you to have a clear end-point.</p>
 			<!-- Insert JS Input Element for User Input-->
 		</div>
 		<div class="col-xs-12 text-center">
-			<h3>Split the objective into small steps.</h3>
+			<h3>What is the next small step?</h3>
+			<hr/>
+			<form>
+				<input type="text" name="next-step">
+			</form>
 			<p>Small steps allow the task to be manageable. If the objective is split into small steps, progress can be split into visible "checkpoints".</p>
 		</div>
 		<div class="col-xs-12 text-center">
 			<h3>Where are you now?</h3>
+			<hr/>
+			<form>
+				<input type="text" name="current-point">
+			</form>
 			<p>Losing focus happens when the current focal point is lost. Knowing where you are enables you to stay on track and mark your progress.</p>
 		</div>
+		<div class="col-xs-12 text-center">
+			<h2> How often would you like to re-focus? </h2>
+			<hr/>
+			<select>
+		  		<option value="short">Every 15 Minutes</option>
+		  		<option value="medium">Every 30 Minutes</option>
+		  		<option value="long">Every 45 Minutes</option>
+		  		<option value="super-long">Every 60 Minutes</option>
+			</select>
+		</div>
 	</div>
+
+<!-- Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- jQuery -->
+	<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
 </body>
 
 </html>
