@@ -26,7 +26,9 @@ function setTimer(sel){
  	//Wait for start button
 }
 
-function firstField(objective){
+function firstField(){
+	var obj = document.getElementById("objective").value;
+	alert(obj);
 	
 }
 
