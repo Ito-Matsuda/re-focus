@@ -2,7 +2,9 @@
 
 //Global Variables
 var timeLeft = 1;
-
+var obj;
+var nextStep;
+var cpoint;
 /*
 Purpose of setTimer is to set the initial timer that
 every "x" minutes, you will get a popup / notification
@@ -27,24 +29,28 @@ function setTimer(sel){
 }
 
 function firstField(){
-	var obj = document.getElementById("objective").value;
+	obj = document.getElementById("objective").value;
     $("#objective-section").fadeOut();
     $("#objective-section").addClass("hidden");
     $("#next-step-section").fadeIn();
 }
 
 function secondField(){
-	var nextStep = document.getElementById("next-step").value;
+	nextStep = document.getElementById("next-step").value;
 	$("#next-step-section").fadeOut();
     $("#next-step-section").addClass("hidden");
     $("#current-point-section").fadeIn();
 }
 
 function thirdField(){
-	var cpoint = document.getElementById("current-point").value;
+	cpoint = document.getElementById("current-point").value;
 	$("#current-point-section").fadeOut();
     $("#current-point-section").addClass("hidden");
     $("#timer-section").fadeIn();
+
+    document.getElementById("first").append(obj);
+    document.getElementById("second").append(nextStep);
+    document.getElementById("third").append(cpoint);
 }
 
 function start(){

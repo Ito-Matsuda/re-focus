@@ -34,6 +34,10 @@ select {
 	color: black;
 }
 
+.summary {
+	font-style: italic;
+}
+
 .wrapper {
 	margin: 10px;
 	padding: 10px;
