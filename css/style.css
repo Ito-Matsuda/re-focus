@@ -1,0 +1,10 @@
+/* ReFocus Stylesheet */
+
+html {
+	height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	font-size: 4em;
+}
