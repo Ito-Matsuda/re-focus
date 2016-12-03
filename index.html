@@ -45,8 +45,8 @@
 			<h2>What is the next (small) step?</h2>
 			<hr/>
 			<form>
-				<input type="text" name="next-step">
-				<button type="submit" class="btn btn-success" onclick="">Next</button>
+				<input type="text" name="next-step" id="next-step">
+				<input type="button" class="btn btn-success" onclick="secondField()" value="Next"></button>
 			</form>
 			<p>Small steps allow the task to be manageable. If the objective is split into small steps, progress can be split into visible "checkpoints".</p>
 		</div>
@@ -54,8 +54,8 @@
 			<h2>Where are you now?</h2>
 			<hr/>
 			<form>
-				<input type="text" name="current-point">
-				<button type="submit" class="btn btn-success" onclick="">Next</button>
+				<input type="text" name="current-point" id="current-point">
+				<input type="button" class="btn btn-success" onclick="thirdField()" value="Next"></button>
 			</form>
 			<p>Losing focus happens when the current focal point is lost. Knowing where you are enables you to stay on track and mark your progress.</p>
 		</div>
@@ -68,7 +68,7 @@
 		  		<option value="long">Every 45 Minutes</option>
 		  		<option value="super-long">Every 60 Minutes</option>
 			</select>
-			<button type="submit" class="btn btn-success">Re-Focus!</button>
+			<input type="button" class="btn btn-success" onclick="firstField()" value="Re-Focus"></button>
 		</div>
 	</div>
 

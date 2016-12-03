@@ -28,17 +28,25 @@ function setTimer(sel){
 
 function firstField(){
 	var obj = document.getElementById("objective").value;
-	alert(obj);
-	
+    $("#objective-section").fadeOut();
+    $("#objective-section").addClass("hidden");
+    $("#next-step-section").fadeIn();
+}
+
+function secondField(){
+	var nextStep = document.getElementById("next-step").value;
+	$("#next-step-section").fadeOut();
+    $("#next-step-section").addClass("hidden");
+    $("#current-point-section").fadeIn();
+}
+
+function thirdField(){
+	var cpoint = document.getElementById("current-point").value;
+	$("#current-point-section").fadeOut();
+    $("#current-point-section").addClass("hidden");
+    $("#timer-section").fadeIn();
 }
 
 function start(){
 
 }
-
-
-$( document ).ready(function() {
-	$("#next-step-section").remove();
-	$("#current-point-section").remove();
-	$("#timer-section").remove();
-});

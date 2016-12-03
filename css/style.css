@@ -30,6 +30,10 @@ hr {
 	width: 30%;
 }
 
+select {
+	color: black;
+}
+
 .wrapper {
 	margin: 10px;
 	padding: 10px;
@@ -38,4 +42,16 @@ hr {
 
 #title {
 	padding: 50px;
+}
+
+#next-step-section {
+	display: none;
+}
+
+#current-point-section {
+	display: none;
+}
+
+#timer-section {
+	display: none;
 }
