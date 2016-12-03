@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Re-Focus",
+	"version": "1",
+	
+	"browser_action":{
+	"default_icon":{
+		"16":"images/icon.png"
+	}, 
+	"default_title": "Re-Focus",
+	"default_popup": "popup.html"
+	}, 
+
+	"permissions":["activeTab", "tabs"]
+
+} 
