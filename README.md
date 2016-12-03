@@ -1,2 +1,3 @@
-# re-focus
-Application used to help users stay on track and "re-focus"
+# Re-Focus
+***
+Re-Focus is an application built to help users stay focused.
