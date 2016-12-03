@@ -1,7 +1,7 @@
 //This should interact with the html file
 
 //Global Variables
-var duration;
+var timeLeft = 1;
 
 /*
 Purpose of setTimer is to set the initial timer that
@@ -10,24 +10,30 @@ asking if you are focusing.
 */
 function setTimer(sel){
  	// Takes time from a drop-down menu from the index.html file
+ 	//Uses momentjs
  	if (sel.value == "short") {
- 		duration = 15;
+ 		timeLeft = moment.duration(15, 'minutes');
  	}
  	else if (sel.value == "medium"){
- 		duration = 30;
+ 		timeLeft = moment.duration(30, 'minutes');
  	}
  	else if (sel.value == "long"){
- 		duration = 45;
+ 		timeLeft = moment.duration(45, 'minutes');
  	}
  	else if (sel.value == "super-long"){
- 		duration = 60;
+ 		timeLeft = moment.duration(60, 'minutes');
  	}
  	//Wait for start button
+}
+
+function firstField(objective){
+	
 }
 
 function start(){
 
 }
+
 
 $( document ).ready(function() {
 	$("#next-step-section").remove();
