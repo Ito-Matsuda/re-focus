@@ -22,14 +22,14 @@
 
 </head>
 
-<body onload="hideContent()">
+<body>
 	<div class="container-fluid wrapper">
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-xs-12" id="title">
 				<h1 class="text-center">Re-Focus</h1>
 			</div>
 		</div>
-		<div class="col-xs-12 text-center">
+		<div class="col-xs-12 text-center" id="objective-section">
 			<h3>Do you have a clear objective?</h4>
 			<hr/>
 			<form>
@@ -38,15 +38,15 @@
 			<p>Choosing one clear objective allows you to have a clear end-point.</p>
 			<!-- Insert JS Input Element for User Input-->
 		</div>
-		<div class="col-xs-12 text-center">
-			<h3>What is the next small step?</h3>
+		<div class="col-xs-12 text-center" id="next-step-section">
+			<h3>What is the next (small) step?</h3>
 			<hr/>
 			<form>
 				<input type="text" name="next-step">
 			</form>
 			<p>Small steps allow the task to be manageable. If the objective is split into small steps, progress can be split into visible "checkpoints".</p>
 		</div>
-		<div class="col-xs-12 text-center">
+		<div class="col-xs-12 text-center" id="current-point-section">
 			<h3>Where are you now?</h3>
 			<hr/>
 			<form>
@@ -54,10 +54,10 @@
 			</form>
 			<p>Losing focus happens when the current focal point is lost. Knowing where you are enables you to stay on track and mark your progress.</p>
 		</div>
-		<div class="col-xs-12 text-center">
+		<div class="col-xs-12 text-center" id="timer-section">
 			<h2> How often would you like to re-focus? </h2>
 			<hr/>
-			<select>
+			<select id="timer" onchange="setTimer(this)">
 		  		<option value="short">Every 15 Minutes</option>
 		  		<option value="medium">Every 30 Minutes</option>
 		  		<option value="long">Every 45 Minutes</option>
@@ -66,11 +66,14 @@
 		</div>
 	</div>
 
+<!-- jQuery -->
+	<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
 <!-- Bootstrap JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!-- jQuery -->
-	<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+<!-- Main JS -->
+	<script src="main.js"></script>
 
 </body>
 

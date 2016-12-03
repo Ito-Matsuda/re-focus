@@ -15,14 +15,23 @@ h1 {
 }
 
 form {
-	padding: 8px;
+	padding-bottom: 15px;
+	padding-top: 10px;
 }
 
 p {
 	padding: 8px;
 }
 
+hr {
+	width: 30%;
+}
+
 .wrapper {
 	margin: 10px;
 	padding: 10px;
+}
+
+#title {
+	padding-bottom: 50px;
 }
