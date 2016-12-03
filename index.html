@@ -39,16 +39,18 @@
 				<input type="text" name="objective" id="objective"/>
 				<input type="button" class="btn btn-success" onclick="firstField()" value="Next"></button>
 			</form>
-			<p>Choosing a clear objective allows you to have a clear end-point in mind.</p>
+			<p>Choosing a clear objective allows you to work efficiently.</p>
+			<p>The objective should be a small task that is an achievable part of a bigger goal.</p>
 		</div>
 		<div class="col-xs-12 text-center" id="next-step-section">
-			<h2>What is the next (small) step?</h2>
+			<h2>How will you start?</h2>
 			<hr/>
 			<form>
 				<input type="text" name="next-step" id="next-step">
 				<input type="button" class="btn btn-success" onclick="secondField()" value="Next"></button>
 			</form>
-			<p>Small steps allow the task to be manageable. If the objective is split into small steps, progress can be split into visible "checkpoints".</p>
+			<p>Getting started is the hardest part.</p>
+			<p>Plan how you will start your task, and the task will be easier to complete. </p>
 		</div>
 		<div class="col-xs-12 text-center" id="current-point-section">
 			<h2>Where are you now?</h2>
@@ -57,16 +59,17 @@
 				<input type="text" name="current-point" id="current-point">
 				<input type="button" class="btn btn-success" onclick="thirdField()" value="Next"></button>
 			</form>
-			<p>Losing focus happens when the current focal point is lost. Knowing where you are enables you to stay on track and mark your progress.</p>
+			<p>Losing focus happens when your current focal point is lost.</p>
+			<p>Knowing where you are enables you to stay on track and mark your progress.</p>
 		</div>
 		<div class="col-xs-12 text-center" id="timer-section">
-			<h2> How often would you like to re-focus? </h2>
+			<h2> When would you like to re-focus? </h2>
 			<hr/>
 			<select id="timer" onchange="setTimer(this)">
-		  		<option value="short">Every 15 Minutes</option>
-		  		<option value="medium">Every 30 Minutes</option>
-		  		<option value="long">Every 45 Minutes</option>
-		  		<option value="super-long">Every 60 Minutes</option>
+		  		<option value="short">In 15 Minutes</option>
+		  		<option value="medium">In 30 Minutes</option>
+		  		<option value="long">In 45 Minutes</option>
+		  		<option value="super-long">In 60 Minutes</option>
 			</select>
 			<input type="button" class="btn btn-success" onclick="firstField()" value="Re-Focus"></button>
 		</div>
