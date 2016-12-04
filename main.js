@@ -1,5 +1,9 @@
-//This should interact with the html file
-
+/*
+This should interact with the html file
+TODO    - Implement the timer -with momentjs?-
+        - Implement as a chrome extension
+        - Bring up a desktop notification when they should take a break
+*/
 //Global Variables
 var timeLeft = 1;
 var obj;
@@ -54,5 +58,18 @@ function thirdField(){
 }
 
 function start(){
-
+    // Provides short, medium, long, super-long
+    var timeChosen = document.getElementById("timer").value;
+    if (timeChosen == "short"){
+        timeLeft = 15;
+    }
+    else if (timeChosen == "medium"){
+        timeLeft = 30;
+    }
+    else if (timeChosen == "long"){
+        timeLeft = 45;
+    }
+    else if (timeChosen == "super-long"){
+        timeLeft = 60;
+    }
 }
