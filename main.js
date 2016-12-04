@@ -5,10 +5,11 @@ TODO    - Implement the timer -with momentjs?-
         - Bring up a desktop notification when they should take a break
 */
 //Global Variables
-var timeLeft = 1;
+var timeLeft;
 var obj;
 var nextStep;
 var cpoint;
+var timer;
 /*
 Purpose of setTimer is to set the initial timer that
 every "x" minutes, you will get a popup / notification
@@ -61,15 +62,30 @@ function start(){
     // Provides short, medium, long, super-long
     var timeChosen = document.getElementById("timer").value;
     if (timeChosen == "short"){
-        timeLeft = 15;
+        timeLeft = moment.duration({minutes: 15, seconds:0});
     }
     else if (timeChosen == "medium"){
-        timeLeft = 30;
+        timeLeft = moment.duration({minutes:30, seconds:0});
+        alert("LOL");
     }
     else if (timeChosen == "long"){
-        timeLeft = 45;
+        timeLeft = moment.duration({minutes:45, seconds:0});
     }
     else if (timeChosen == "super-long"){
-        timeLeft = 60;
+        timeLeft = moment.duration({minutes:60, seconds:0});
     }
+    //Need to have a timer, this runs every second, update display?
+    timer = window.setInterval(tickTheTime, 1000);
+}
+
+function tickTheTime(){
+    timeLeft.subtract(1, 's');
+
+}
+
+
+
+function countDown(){
+    // Display idea --> could have something showing what the current time is and when you should take a break
+    // this is in addition to the time remaining display
 }

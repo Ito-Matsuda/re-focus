@@ -72,6 +72,7 @@
 			<hr/>
 			<h2> When would you like to re-focus? </h2>
 			<hr/>
+			
 			<select id="timer" onchange="setTimer(this)">
 		  		<option value="short">In 15 Minutes</option>
 		  		<option value="medium">In 30 Minutes</option>
@@ -79,6 +80,7 @@
 		  		<option value="super-long">In 60 Minutes</option>
 			</select>
 			<input type="button" class="btn btn-success" onclick="start()" value="Re-Focus"></button>
+			<!-- Do we want to display remaining time below here? -->
 		</div>
 	</div>
 
@@ -90,6 +92,9 @@
 
 <!-- Main JS -->
 	<script src="main.js"></script>
+
+<!-- MomentJS (http://momentjs.com/) -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.15.0/moment.min.js"></script>
 
 </body>
 
