@@ -37,7 +37,7 @@
 			<hr/>
 			<form>
 				<input type="text" name="objective" id="objective"/>
-				<input type="button" class="btn btn-success" onclick="firstField()" value="Next"></button>
+				<button id="objButton" class="btn btn-success">Next</button>
 			</form>
 			<p>Choosing a clear objective allows you to work efficiently.</p>
 			<p>The objective should be a small task that is an achievable part of a bigger goal.</p>
@@ -48,7 +48,7 @@
 			<hr/>
 			<form>
 				<input type="text" name="next-step" id="next-step">
-				<input type="button" class="btn btn-success" onclick="secondField()" value="Next"></button>
+				<button id="howStartButton" class="btn btn-success">Next</button>
 			</form>
 			<p>Getting started is the hardest part.</p>
 			<p>Plan how you will start your task, and the task will be easier to complete. </p>
@@ -58,7 +58,7 @@
 			<hr/>
 			<form>
 				<input type="text" name="current-point" id="current-point">
-				<input type="button" class="btn btn-success" onclick="thirdField()" value="Next"></button>
+				<button id="currentPntButton"  class="btn btn-success">Next</button>
 			</form>
 			<p>Losing focus happens when your current focal point is lost.</p>
 			<p>Knowing where you are enables you to stay on track and mark your progress.</p>
@@ -79,7 +79,7 @@
 		  		<option value="long">In 45 Minutes</option>
 		  		<option value="super-long">In 60 Minutes</option>
 			</select>
-			<input type="button" class="btn btn-success" onclick="start()" value="Re-Focus"></button>
+			<button id="focusUpButton" class="btn btn-success">Re-Focus</button>
 			<!-- Do we want to display remaining time below here? -->
 		</div>
 	</div>
