@@ -59,3 +59,7 @@ select {
 #timer-section {
 	display: none;
 }
+
+.timeDisplay{
+	font-size: 200%;
+}
